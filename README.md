@@ -23,6 +23,7 @@ Demonstrates various issues with Mono on macOS 10.14 Mojave
 - The MainMenu.xib doesn't contain a window; all UI elements except for the main menu are provided by the shared .framework
 - The AppDelegate only instantiate the `LMOutlineViewTest` class from the shared framework which then does everything else that happens in the app (create the window, the outline view, setup the data model, etc.)
 - I think this demo shows that the problem is at the foundation of the mono runtime as the actual UI is created and shown by a native framework which runs just fine when consumed by a native app but shows all of the mentioned symptoms when consumed from a mono-based app
+- I cannot reproduce any of the issues in a 10.14 VM. I can only reproduce this on actual hardware.
 
 # Digging deeper
 I think the problem is somehow related to how launch services activates the app. I think so because most problems are not visible when run from VS or from the console.
