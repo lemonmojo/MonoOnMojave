@@ -17,3 +17,18 @@ Demonstrates various issues with Mono on macOS 10.14 Mojave
 - Sometimes you might also see strange artifacts when resizing the window
 - Now try the same with the native app (drag to dock and run)
 - The native app runs perfectly fine
+
+# Notes
+- Both sample apps are minimal in that they contain only a MainMenu.xib (which is even shared by both, the Xamarin and the native projects!)
+- The MainMenu.xib doesn't contain a window; all UI elements except for the main menu are provided by the shared .framework
+- The AppDelegate only instantiate the `LMOutlineViewTest` class from the shared framework which then does everything else that happens in the app (create the window, the outline view, setup the data model, etc.)
+
+# Videos
+
+Here's the C# app:
+
+![](Videos/Mono%20Mojave%20Bug%20Xamarin.gif)
+
+And here comes the native app:
+
+![](Videos/Mono%20Mojave%20Bug%20Xcode.gif)
