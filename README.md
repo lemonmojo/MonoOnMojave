@@ -22,6 +22,16 @@ Demonstrates various issues with Mono on macOS 10.14 Mojave
 - Both sample apps are minimal in that they contain only a MainMenu.xib (which is even shared by both, the Xamarin and the native projects!)
 - The MainMenu.xib doesn't contain a window; all UI elements except for the main menu are provided by the shared .framework
 - The AppDelegate only instantiate the `LMOutlineViewTest` class from the shared framework which then does everything else that happens in the app (create the window, the outline view, setup the data model, etc.)
+- I think this demo shows that the problem is at the foundation of the mono runtime as the actual UI is created and shown by a native framework which runs just fine when consumed by a native app but shows all of the mentioned symptoms when consumed from a mono-based app
+
+# Digging deeper
+I think the problem is somehow related to how launch services activates the app. I think so because most problems are not visible when run from VS or from the console.
+
+- Run the app by executing `XamarinMacMojaveTest2/bin/Debug/XamarinMacMojaveTest2.app/Contents/MacOS/XamarinMacMojaveTest2` (Working directory must be the repo root dir)
+- In this case, the app is not activated (launched in background) and after activating manually everything runs smoothly
+- If however launched with `open XamarinMacMojaveTest2/bin/Debug/XamarinMacMojaveTest2.app` the app is activated automatically and all the mentioned issues occur.
+- Now, the `open` command also supports a parameter to disable activating the app. From the man page: `-g  Do not bring the application to the foreground.`
+- If you launch the app like so `open -g XamarinMacMojaveTest2/bin/Debug/XamarinMacMojaveTest2.app` none of the issues occur.
 
 # Videos
 
