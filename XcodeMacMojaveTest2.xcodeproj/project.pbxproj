@@ -397,7 +397,7 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "$(SRCROOT)/../XamarinMacMojaveTest2/XamarinMacMojaveTest2/Info.plist";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/XamarinMacMojaveTest2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -417,7 +417,7 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "$(SRCROOT)/../XamarinMacMojaveTest2/XamarinMacMojaveTest2/Info.plist";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/XamarinMacMojaveTest2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
