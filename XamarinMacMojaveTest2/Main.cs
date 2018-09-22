@@ -7,7 +7,7 @@ namespace XamarinMacMojaveTest2
 	static class MainClass
 	{
 		[DllImport("/System/Library/Frameworks/Cocoa.framework/Cocoa", EntryPoint = "NSApplicationLoad")]
-		private static extern void NSApplicationLoad();
+		private static extern bool NSApplicationLoad();
 
 		static void Main(string[] args)
 		{
