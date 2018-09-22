@@ -397,13 +397,13 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
-				HEADER_SEARCH_PATHS = "/Library/Frameworks/Mono.framework/Versions/Current/include/mono-2.0/";
+				HEADER_SEARCH_PATHS = "/Users/fx/Downloads/MonoMojaveBug/mono-bin/include/mono-2.0/";
 				INFOPLIST_FILE = "$(PROJECT_DIR)/XamarinMacMojaveTest2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = /Library/Frameworks/Mono.framework/Versions/Current/lib/pkgconfig/../../lib;
+				LIBRARY_SEARCH_PATHS = "/Users/fx/Downloads/MonoMojaveBug/mono-bin/lib/pkgconfig/../../lib";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = "-lmono-2.0";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lemonmojo.XcodeMacMojaveTest2;
@@ -420,13 +420,13 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
-				HEADER_SEARCH_PATHS = "/Library/Frameworks/Mono.framework/Versions/Current/include/mono-2.0/";
+				HEADER_SEARCH_PATHS = "/Users/fx/Downloads/MonoMojaveBug/mono-bin/include/mono-2.0/";
 				INFOPLIST_FILE = "$(PROJECT_DIR)/XamarinMacMojaveTest2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = /Library/Frameworks/Mono.framework/Versions/Current/lib/pkgconfig/../../lib;
+				LIBRARY_SEARCH_PATHS = "/Users/fx/Downloads/MonoMojaveBug/mono-bin/lib/pkgconfig/../../lib";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = "-lmono-2.0";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lemonmojo.XcodeMacMojaveTest2;
