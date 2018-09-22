@@ -21,7 +21,9 @@ static NSString* const CELL_IDENTIFIER = @"LMCellIdentifier";
         
         NSWindowStyleMask windowStyle = NSWindowStyleMaskClosable | NSWindowStyleMaskMiniaturizable | NSWindowStyleMaskResizable | NSWindowStyleMaskTitled;
         self.window = [[NSWindow alloc] initWithContentRect:NSMakeRect(100, 100, 500, 300) styleMask:windowStyle backing:NSBackingStoreBuffered defer:NO];
-        self.window.contentView.superview.wantsLayer = YES;
+        
+        // Comment in to reduce the effects of the strangeness
+        //self.window.contentView.superview.wantsLayer = YES;
         
         NSView* outlineView = [self makeOutlineViewWithFrame:self.window.contentView.bounds];
         
